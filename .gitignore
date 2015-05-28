@@ -1,0 +1,15 @@
+# folders
+Bnet
+Data
+Data_D3
+InspectorReporter
+Logs
+
+# files
+*Debug*
+*.db
+*.dll
+*.dmp
+*.exe
+.build.info
+.patch.result
