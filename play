@@ -1,0 +1,18 @@
+# /bin/zsh
+
+# get argument
+DEST="$1"
+
+# if argument is empty, use Default
+if [[ $1 == "" ]]; then
+    DEST="Default"
+fi
+
+# report effective argument
+echo Will Use Server Pool: $DEST.
+
+# exec
+LC_CTYPE=zh_CN.UTF-8 LANG=zh_CN.UTF-8 primusrun wine Diablo\ III.exe -uid diablo3_zhtw -nofixaspect -w -opengl -launch OnlineService.Matchmaking.ServerPool=$DEST  &> /dev/null
+
+# report exit
+echo Exited.
